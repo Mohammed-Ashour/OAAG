@@ -1,6 +1,6 @@
 pip install gdown 
 gdown https://drive.google.com/u/0/uc?id=19012ClEam378QzPWL8ww8HMpBcjye_Rf
-unzip cikm2020-OAAG-data.zip data
+unzip cikm2020-OAAG-data.zip -d data
 unzip data/elec.zip -d data/elec
 unzip data/home.zip -d data/home 
 unzip data/sport.zip -d data/sport 
