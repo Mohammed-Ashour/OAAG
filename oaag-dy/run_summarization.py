@@ -228,7 +228,7 @@ def run_training(model, batcher, sess_context_manager, sv, summary_writer, vocab
         summary_writer.flush()
         print("current best result: MACRO_F1 %s. ACC %s, Loss %s" % (max_f1, max_acc, min_loss))
         #print(split_acc)
-      if train_step % 5000 == 0:
+      if train_step % 200 == 0:
         to_be_saved = False
         t1 = time.time()
         tf.compat.v1.logging.info('seconds for training step: %.3f', t1-t0)
